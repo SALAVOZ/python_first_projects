@@ -28,10 +28,10 @@ def build_url(id):
 
 def run_case(func):
     #start_timestamp = time.time()
-    requests_per_time = 30
+    requests_per_time = 15
     requests_to_do_again = []
     result = []
-    for index in range(10_000, 1_000_000):#CURRENT_INDEX = 10_000
+    for index in range(10_000, 1_000_000):#CURRENT_INDEX = 10_000  5 16700
         #time.sleep(3)
         print('index', index)
         result = []
@@ -88,8 +88,3 @@ len(list_token)
 #run_case(http_get)
 asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
 asyncio.run(run_case(http_get))
-
-
-
-
-
